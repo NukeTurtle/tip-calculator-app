@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: hsl(185, 41%, 84%);
+}
+.main{
+    background: hsl(189, 41%, 97%);
+}
