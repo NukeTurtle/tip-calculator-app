@@ -8,6 +8,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -29,30 +32,36 @@
     <img src="images/logo.svg" alt="">
   </div>
   <div class="main">
-    Bill
+    <div class="left-container">
+      <p>Bill</p>
+      <input type="text">
 
-    Select Tip %
-    5%
-    10%
-    15%
-    25%
-    50%
-    Custom
+      <p>Select Tip %</p>
+      <button class="select-tip">5%</button>
+      <button class="select-tip">10%</button>
+      <button class="select-tip">15%</button>
+      <button class="select-tip">25%</button>
+      <button class="select-tip">50%</button>
+      <button class="custon-tip">Custom</button>
 
-    Number of People
+      <p>Number of People</p>
+      <input type="number">
+    </div>
 
-    Tip Amount
-    / person
+    <div class="right-container">
+      <p>Tip Amount</p>
+      <p>/ person</p>
 
-    Total
-    / person
+      <p>Total</p>
+      <p>/ person</p>
 
-    Reset
+      <button class="reset">Reset</button>
+    </div>
   </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/UrsulaSpela">Ursula Spela</a>.
   </div>
 </body>
 
