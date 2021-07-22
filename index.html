@@ -38,12 +38,12 @@
 
       <div class="buttons">
         <p>Select Tip %</p>
-        <button class="select-tip">5%</button>
-        <button class="select-tip">10%</button>
-        <button class="select-tip">15%</button>
-        <button class="select-tip">25%</button>
-        <button class="select-tip">50%</button>
-        <input type="text" id="custom" placeholder="Custom">
+        <button class="select-tip" onclick="calculate5()">5%</button>
+        <button class="select-tip" onclick="calculate10()">10%</button>
+        <button class="select-tip" onclick="calculate15()">15%</button>
+        <button class="select-tip" onclick="calculate25()">25%</button>
+        <button class="select-tip" onclick="calculate50()">50%</button>
+        <input type="text" id="custom" placeholder="Custom" oninput="claculateCustom()">
       </div>
 
       <p>Number of People</p>
@@ -75,6 +75,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/UrsulaSpela">Ursula Spela</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
