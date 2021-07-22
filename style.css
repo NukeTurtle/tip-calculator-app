@@ -11,6 +11,10 @@ body{
     align-items: center;
     background: hsl(185, 41%, 84%);
 }
+.logo{
+    margin-top: 160px;
+    margin-bottom: 85px;
+}
 .main{
     background: white;
     display: flex;
@@ -24,6 +28,9 @@ body{
     height: 410px;
     border-radius: 20px;
 }
+.buttons{
+    margin-bottom: 45px;
+}
 .left-container button{
     width: 115px;
     height: 45px;
@@ -32,19 +39,48 @@ body{
     background:hsl(183, 100%, 15%);
     color: white;
     font-size: 22px;
+    margin-top: 15px;
 }
 input{
     width: 375px;
     height: 45px;
-    background:hsl(189, 41%, 97%);
     border: none;
     font-size: 24px;
     border-radius: 5px;
+    text-align: right;
+    padding: 12px 15px;
+    margin-bottom: 40px;
+    color: hsl(186, 14%, 43%);
+}
+#bill{
+    background: hsl(189, 41%, 97%) url(images/icon-dollar.svg) no-repeat;
+    background-position: 15px 15px;
+}
+#people{
+    background: hsl(189, 41%, 97%) url(images/icon-person.svg) no-repeat;
+    background-position: 15px 15px;
 }
 .left-container p{
     color: hsl(186, 14%, 43%);
-    font-weight: 700;
+    font-weight: 500;
+    margin-bottom: 5px;
 }
 .right-container{
     background: hsl(183, 100%, 15%);
+    padding: 60px 40px 40px 40px;
+}
+.right-container button{
+    width: 330px;
+    height: 45px;
+    background: hsl(184, 14%, 56%);
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color:hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 22px;
+}
+.tip-total{
+    display: flex;
+    justify-content: space-between;
 }

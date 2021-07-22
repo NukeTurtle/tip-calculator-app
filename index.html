@@ -28,32 +28,44 @@
 </head>
 
 <body>
-  <div>
+  <div class="logo">
     <img src="images/logo.svg" alt="">
   </div>
   <div class="main">
     <div class="left-container">
       <p>Bill</p>
-      <input type="text">
+      <input type="text" id="bill">
 
-      <p>Select Tip %</p>
-      <button class="select-tip">5%</button>
-      <button class="select-tip">10%</button>
-      <button class="select-tip">15%</button>
-      <button class="select-tip">25%</button>
-      <button class="select-tip">50%</button>
-      <button class="custon-tip">Custom</button>
+      <div class="buttons">
+        <p>Select Tip %</p>
+        <button class="select-tip">5%</button>
+        <button class="select-tip">10%</button>
+        <button class="select-tip">15%</button>
+        <button class="select-tip">25%</button>
+        <button class="select-tip">50%</button>
+        <button class="custon-tip">Custom</button>
+      </div>
 
       <p>Number of People</p>
-      <input type="number">
+      <input type="number" id="people">
     </div>
 
     <div class="right-container">
-      <p>Tip Amount</p>
-      <p>/ person</p>
+      <div class="tip-total">
+        <div>
+          <p>Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <h3>0</h3>
+      </div>
 
-      <p>Total</p>
-      <p>/ person</p>
+      <div class="tip-total">
+        <div>
+          <p>Total</p>
+          <p>/ person</p>
+        </div>
+        <h3>0</h3>
+      </div>
 
       <button class="reset">Reset</button>
     </div>
