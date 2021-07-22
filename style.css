@@ -18,6 +18,7 @@ body{
 .main{
     background: white;
     display: flex;
+    justify-content: space-between;
     width: 920px;
     height: 480px;
     border-radius: 20px;
@@ -41,6 +42,16 @@ body{
     font-size: 22px;
     margin-top: 15px;
 }
+button:hover{
+    background: hsl(172, 67%, 45%);
+}
+#custom{
+    width: 115px;
+    height: 45px;
+    font-size: 22px;
+    background: hsl(189, 41%, 97%);
+    color:hsl(183, 100%, 15%);
+}
 input{
     width: 375px;
     height: 45px;
@@ -51,6 +62,12 @@ input{
     padding: 12px 15px;
     margin-bottom: 40px;
     color: hsl(186, 14%, 43%);
+}
+input:hover{
+    border: 2px solid hsl(172, 67%, 45%);
+}
+input.error{
+    border: 2px solid red;
 }
 #bill{
     background: hsl(189, 41%, 97%) url(images/icon-dollar.svg) no-repeat;
@@ -79,8 +96,29 @@ input{
     color:hsl(183, 100%, 15%);
     font-weight: 700;
     font-size: 22px;
+    position: relative;
+    top: 110px;
+    opacity: .4;
+}
+.right-container button:hover{
+    background:hsl(172, 67%, 45%);
+    opacity: 1;
 }
 .tip-total{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.big-text{
+    font-size: 16px;
+    color: white;
+}
+.small-text{
+    font-size: 14px;
+    color: white;
+    opacity: .4;
+}
+h3{
+    font-size: 50px;
+    color: hsl(172, 67%, 45%);
 }
