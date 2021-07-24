@@ -45,7 +45,7 @@ body{
 button:hover{
     background: hsl(172, 67%, 45%);
 }
-#custom{
+#customTip{
     width: 115px;
     height: 45px;
     font-size: 22px;
@@ -59,7 +59,6 @@ input{
     font-size: 24px;
     border-radius: 5px;
     text-align: right;
-    padding: 12px 15px;
     margin-bottom: 40px;
     color: hsl(186, 14%, 43%);
 }

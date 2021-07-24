@@ -34,20 +34,21 @@
   <div class="main">
     <div class="left-container">
       <p>Bill</p>
-      <input type="text" id="bill">
+      <input type="number" id="bill" value=0 oninput="billCost()">
+
+      <p>Number of People</p>
+      <input type="number" id="people" value=0 oninput="peopleCount()">
 
       <div class="buttons">
         <p>Select Tip %</p>
-        <button class="select-tip" onclick="calculate5()">5%</button>
-        <button class="select-tip" onclick="calculate10()">10%</button>
-        <button class="select-tip" onclick="calculate15()">15%</button>
-        <button class="select-tip" onclick="calculate25()">25%</button>
-        <button class="select-tip" onclick="calculate50()">50%</button>
-        <input type="text" id="custom" placeholder="Custom" oninput="claculateCustom()">
+        <button class="select-tip" onclick="tipProcent = 0.05; calculateTip()">5%</button>
+        <button class="select-tip" onclick="tipProcent = 0.10; calculateTip()">10%</button>
+        <button class="select-tip" onclick="tipProcent = 0.15; calculateTip()">15%</button>
+        <button class="select-tip" onclick="tipProcent = 0.25; calculateTip()">25%</button>
+        <button class="select-tip" onclick="tipProcent = 0.50; calculateTip()">50%</button>
+        <input type="number" id="customTip" placeholder="Custom" oninput="tipProcent = customTip.value /100; calculateTip()">
       </div>
 
-      <p>Number of People</p>
-      <input type="number" id="people">
     </div>
 
     <div class="right-container">
@@ -64,7 +65,7 @@
           <p class="big-text">Total</p>
           <p class="small-text">/ person</p>
         </div>
-        <h3 id=#total> &#36 0</h3>
+        <h3 id=total>&#36 0</h3>
       </div>
 
       <button class="reset" onclick="clearAll()">Reset</button>

@@ -1,43 +1,29 @@
 // //define variables
-var bill = document.querySelector('#bill').value;
-var custom = document.querySelector('#custom');
-var people = document.querySelector('#people').value;
-var tip = document.querySelector('#tip');
-var total = document.querySelector('#total');
+var tip = document.querySelector("#tip");
+var total = document.querySelector("#total");
+var tipProcent = "";
 
-function claculate5(){
-tip.innerHTML = "$ " + bill * .05 / people;
-total.innerHTML = (bill * .05 / people) + (bill / people);
+
+function billCost() {
+    var bill = Number(document.querySelector("#bill").value);
+    return bill;
 }
-claculate5();
 
-function claculate10(){
-    tip.innerHTML = "$ " + bill * .1 / people;
-    total.innerHTML = (bill * .1 / people) + (bill / people);
-    }
-    claculate10();
+function peopleCount() {
+    var people = Number(document.querySelector("#people").value);
+    return people;
+}
 
-    function claculate15(){
-        tip.innerHTML = "$ " + bill * .15 / people;
-        total.innerHTML = (bill * .15 / people) + (bill / people);
-        }
-        claculate15();
+function calculateTip(){
+    var currentTip = billCost() + tipProcent * 100;
+    document.querySelector("#tip").innerHTML = "$ " + (billCost() * tipProcent / peopleCount()).toFixed(2); //round to 2 decimals
+    document.querySelector("#total").innerHTML = "$ " + (currentTip / peopleCount()).toFixed(2); //round to 2 decimals
+}
 
-        function claculate20(){
-            tip.innerHTML = "$ " + bill * .2 / people;
-            total.innerHTML = (bill * .2 / people) + (bill / people);
-            }
-            claculate5();
-
-            function claculate25(){
-                tip.innerHTML = "$ " + bill * .25 / people;
-                total.innerHTML = (bill * .25 / people) + (bill / people);
-                }
-                claculate25();
-
+//Reset all values to zero
 function clearAll(){
-    tip.innerHTML = "$ 0";
-    total.innerHTML = "$ 0";
-    bill = "0";
-    people = "0";
+    tip.innerHTML = "$ " +0;
+    total.innerHTML = "$ "+ 0;
+    document.querySelector("#bill").value = 0;
+    document.querySelector("#people").value = 0;
 }
